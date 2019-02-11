@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+
+<img class="mySlides w3-animate-fading" src="slide/Fca.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="slide/fundo.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="slide/fundo2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="islide/Fca.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+</body>
+</html>

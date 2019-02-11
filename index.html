@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img id="img-logo" src="icons/logo_unicamp.png" alt="Logo_unicamp.png"></a>
+        </div>
+        <nav>
+            <ul>
+        		<li><a href="index.html">HOME</a></li>                
+                <li><a href="membros.html">MEMBROS</a></li>
+                <li><a href="trabalho.html">TRABALHOS</a></li>
+                <li><a href="ondeEstamos.html">ONDE ESTAMOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sectionslide">
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <img src="slide/Fca.jpg" alt="FCA.jpg" class="img-slide">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="slide/unicamp.png" alt="Unicamp.png" class="img-slide">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="slide/ft.png" alt="ft.png" class="img-slide">
+        </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </section>
+    <div class="titulo">
+            <img src="icons/apresentacao.png" alt="Apresentação.png">
+            <h1 class="conteudoTitulo">Apresentação da Disciplina<br/><span class="elementor-divider-separator"></span></h1>
+    </div>     
+    <section class="section1">
+            <p class="obj">
+                Objetivo: Colocar em perspectiva a programação para Web. Capacitar o aluno a compreender as principais
+                linguagens de marcação e estilo. Capacitar o aluno a compreender e desenvolver scripts para execução em
+                navegadores. Capacitar o aluno a compreender e desenvolver scripts para execução em servidores web.
+            </p>
+
+            <p class="obj">
+                Metodologia de ensino: Aulas teóricas e práticas. Desenvolvimento de trabalhos em grupo e/ou individuais.
+            </p>
+
+            <p class="obj">
+                Ementa: Elaboração de páginas web. Linguagens de marcação. Folhas de estilo. Javascript. Uso de linguagens de
+                programação para geração dinâmica de páginas web. Uso de servidores web para armazenamento de sites.
+                Atividades práticas de implementação de sistemas baseados nessas linguagens.   
+            </p>
+    </section>
+    <section>
+        <div class="titulo">
+                
+                <h1 class="conteudoTitulo">Professores<br/><span class="elementor-divider-separator"></span></h1>
+        </div>
+        <div class="professores">
+            <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4167335D0" target="_blank"><img class="img-prof" id="guilherme" src="Professores/Guilherme.jpg" alt="Guilherme Palermo Coelho" title="Guilherme Palermo Coelho"></a>
+             <p class="txtprofessores">
+                Possui doutorado em Engenharia Elétrica 
+                pela Universidade Estadual de Campinas.
+                Atualmente é Professor Doutor na Faculdade 
+                de Tecnologia, onde realiza atividades de ensino e 
+                desenvolve pesquisas nas linhas de metaheurísticas 
+                para otimização, mineração de dados e aprendizado de 
+                máquina. Tem experiência na área de Inteligência 
+                Computacional, atuando principalmente nos seguintes 
+                temas: 
+                
+                computação bio-inspirada, otimização (mono e multi-objetivo)
+                e redes neurais artificiais.
+            </p>
+        </div>
+        <div class="professores">
+           <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4180847E3" target="_blank"><img class="img-prof" id="bertini" src="Professores/Bertini.jpg" alt="João Bertini" title="João Bertini"></a>
+            
+            <p class="txtprofessores">
+                João Bertini é bacharel em Ciências da Computação pela 
+                Universidade Federal de São Carlos (UFSCar). 
+                Obteve seu diploma de MS , 
+                também na UFSCar. Em 2011 concluiu seu doutorado na 
+                Universidade de São Paulo (USP). Atualmente é professor 
+                associado da Escola de Tecnologia da Universidade de 
+                Campinas, Brasil. Seus interesses de pesquisa são:
+
+                Machine learning
+                Data mining
+                Supervised / Semi-supervised learning
+                Learning from data stream
+                Graph-based learning
+                Complex networks.
+            </p>
+        </div>
+    </section>
+    <section class="pessoa">
+        <div class="titulo">
+            <img src="icons/Objetivo.png" alt="Objetivo.png">
+            <h1 class="conteudoTitulo">Objetivos na Disciplina</h1>
+            <span class="elementor-divider-separator"></span>
+        </div>      
+        <div class="div_objetivos"><!--Alfredo-->
+            <section>
+                <div class="div_foto">
+                    <img src="fotos_pessoais/Alfredo.jpg" class="img-pessoa" alt="Alfredo Albélis" title="Alfredo Albélis">
+                </div>
+                <section class="section_foto">
+                    <p>
+                        "Sou o Alfredo Albélis e para a disciplina Programação Web pretendo expandir meus conhecimentos em HTML, CSS e Javascript,
+                        que são conceitos que eu já tinha algum conhecimento, alguns adquiridos pelo técnico em informática que fiz, e alguns que aprendi por conta própria mesmo em casa.
+                        É uma área que eu me familiarizo e a disciplina até o momento atendeu minhas espectativas, e espero que continue assim até o final."
+                    </p>
+                </section>
+            </section>
+        </div>
+        <div class="div_objetivos"><!--Carlos-->
+            <section>
+                <div class="div_foto">
+                    <img src="fotos_pessoais/Carlos.jpg" class="img-pessoa" alt="Carlos Cirqueira" title="Carlos Cirqueira">
+                </div>
+                <section class="section_foto">
+                    <p>
+                        "Em 2012 conclui meu curso de técnico em informática e nele adquiri um pouco de conhecimento sobre programção web.
+                        Com isso meu objetivo nesta disciplina (SI401 -Programação Web é além de aprimorar meus conhecimentos em HTML e CSS, aprender
+                        o máximo possível sobre JavaScript e PHP."
+                    </p>
+                </section>
+            </section>
+        </div>
+        <div class="div_objetivos"><!--Cleofas-->
+            <section>
+                <div class="div_foto">
+                    <img src="fotos_pessoais/Cleofas.jpeg" class="img-pessoa" alt="Cléofas Peres" title="Cléofas Peres">
+                </div>
+                <section class="section_foto">
+                    <p>
+                            "Sempre quis saber como funciona um site, como que montanhas de códigos viram páginas extremamente bem elaboradas. 
+                            Agora estou tendo a oportunidade de conhecer mais a fundo a linguagem de marcação (HTML) e as folhas de estilo (CSS).
+                            Meu principal objetivo é conseguir até o final do curso dominar tecnologias de frontend e tecnologias de backend
+                            adquirindo conhecimento suficiente para construir aplicações web com todos os recursos apresentados no curso."
+                    </p>
+                </section>
+            </section>
+        </div>
+        <div id="div_ViniObj"><!--Vinicius-->
+            <section>
+                <div class="div_foto">
+                    <img src="fotos_pessoais/vinicius2.jpg" class="img-pessoa" alt="Vinícius Abrantes" title="Vinícius Abrantes">
+                </div>
+                <section class="section_foto">
+                    <p>                               
+                       "Me chamo Vinícius Abrantes, estou cursando a disciplina SI401 (Programação Web) no terceiro semestre de BSI e meus 
+                       objetivos com a disciplina dizem respeito tanto a conhecimentos teóricos quanto práticos.
+                       Em relação ao conhecimento teórico, pretendo aprender as origens e os fundamentos da linguagem HTML e a forma correta
+                       de utilizar o CSS.
+                       Paralelo à esse aprendizado, espero desenvolver trabalhos que apliquem os conceitos estudados em sites dinâmicos,
+                       utilizando os recursos de JavaScript."     
+                    </p>
+                </section>
+            </section>
+        </div>
+    </section>
+    <div class="titulo">
+            <img src="icons/apresentacao.png" alt="Apresentação.png">
+            <h1 class="conteudoTitulo">Apresentação do Trabalho<br/><span class="elementor-divider-separator"></span></h1>
+    </div>     
+    <section class="section1">
+        <p class="obj">
+            Este site foi realizado pela disciplina SI401 (Programação Web) pelo grupo formado pelos membros apresentados acima.
+            Todas as páginas foram escritas seguindo o padrão HTML5 e CSS3. Segue abaixo a lista com todos os 
+            conceitos aplicados nesse trabalho que não foram vistos em aula: <br />
+        </p>
+        <ul>
+            <li>Slideshow retirado de <a href="https://www.w3schools.com/w3css/w3css_slideshow.asp" target="_blank">W3Schools</a>;</li>
+            <li>incorporar googlemaps no site;</li>
+            <li>importar fonte direto do Google Fonts;</li>
+            <li>vincular vídeo ao Google Drive e Youtube;</li>
+            <li>propriedade display;</li>
+            <li>shorthand property border-radius;</li>
+            <li>shorthand property box-shadow;</li>
+        </ul> 
+    </section>
+    <footer>
+        <section id="footer-section1">
+            <div id="footer-menu">
+                <ul>
+                    <li><a class="footer-menu-a" href="index.html">HOME</a></li>                
+                    <li><a class="footer-menu-a" href="membros.html">MEMBROS</a></li>
+                    <li><a class="footer-menu-a" href="trabalho.html">TRABALHOS</a></li>
+                    <li><a class="footer-menu-a" href="ondeEstamos.html">ONDE ESTAMOS</a></li>
+                </ul>
+            </div>
+            <div id="footer-rs">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/ft.unicamp/?ref=br_rs" target="_blank">
+                            <img src="icons/facebook.png" alt="Facebook.png" />Página Oficial da FT
+                        </a>
+                    </li>                
+                    <li>
+                        <a href="https://www.ft.unicamp.br/" target="_blank">
+                            <img id="footer-logo-ft" src="icons/logo_ft.png" alt="Logo_FT.png" />Faculdade de Tecnologia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.unicamp.br/unicamp/" target="_blank">
+                            <img src="icons/logo_branco_unicamp.png" alt="Logo_unicamp.png" />Universidade Estadual de Campinas
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="footer-contato">
+                <ul>
+                    <li>
+                        <img src="icons/home.png" alt="Home.png" />R. Paschoal Marmo - Jardim Piratininga,<br />Limeira - SP, 1888
+                    </li>                
+                    <li>
+                        <img src="icons/fone.png" alt="Telefone.png" />(19) 3521-2121
+                    </li>
+                    <li>
+                        <img src="icons/email.png" alt="Email.png" />portal@unicamp.br
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="footer-section2">
+            Copyright © 2018
+        </section>
+    </footer>
+</body>
+</html>
