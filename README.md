@@ -1,1 +1,3 @@
-# Site-SI401
+---
+permalink: /index.html
+---
